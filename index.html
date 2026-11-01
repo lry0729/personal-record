@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人记录 | 刘瑞阳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>个人记录</h1>
+    <nav>
+      <button class="nav-btn active" data-section="diary">日记</button>
+      <button class="nav-btn" data-section="todo">待办</button>
+      <button class="nav-btn" data-section="goals">目标</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 日记板块 -->
+    <section id="diary" class="section active">
+      <h2>日记</h2>
+      <div class="input-group">
+        <input type="text" id="diary-title" placeholder="标题">
+        <textarea id="diary-content" placeholder="今天发生了什么..." rows="4"></textarea>
+        <button id="add-diary">保存日记</button>
+      </div>
+      <div id="diary-list" class="list"></div>
+    </section>
+
+    <!-- 待办板块 -->
+    <section id="todo" class="section">
+      <h2>待办</h2>
+      <div class="input-group">
+        <input type="text" id="todo-input" placeholder="添加新的待办事项...">
+        <button id="add-todo">添加</button>
+      </div>
+      <div id="todo-list" class="list"></div>
+    </section>
+
+    <!-- 目标板块 -->
+    <section id="goals" class="section">
+      <h2>目标</h2>
+      <div class="input-group">
+        <input type="text" id="goal-title" placeholder="目标标题">
+        <textarea id="goal-desc" placeholder="目标描述与计划..." rows="3"></textarea>
+        <button id="add-goal">添加目标</button>
+      </div>
+      <div id="goals-list" class="list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>个人记录网站 · 数据保存在本地浏览器 · 刘瑞阳</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
